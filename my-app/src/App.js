@@ -11,6 +11,8 @@ import dash from './img/dashboard.svg';
 import help from './img/Help.png';
 import sales from './img/group.svg';
 import trolley from './img/SalesTurnover.svg';
+import more from './img/more.svg'
+import product from './img/product.png'
 
 import Chart from './test.js';
 
@@ -37,9 +39,6 @@ function App() {
 						<span className="company">Company Name</span>
 						<img alt="User" src={avatar} className="ava" />
 						<button className="logout" onClick={buttonClicked}><img /></button>
-						{/* <IconButton aria-label="logout" className="logout d-inline">
-							<img />
-						</IconButton> */}
 					</div>
 				</Navbar.Collapse>
 			</Navbar>
@@ -54,8 +53,7 @@ function App() {
 					<h1>Dashboard</h1>
 
 					<div className="date-picker">
-					{/* insert date time picker later */}
-					helooo
+						
 					</div>
 				</div>
 				
@@ -79,6 +77,89 @@ function App() {
 						<span className="apv">AVERAGE PURCHASE VALUE</span>
 						<Chart className="char-apv" />
 					</div>
+
+					<div className="list-prod container">
+						<span className="title">BEST SELLING SKU</span>
+						<a className="menu-dot" href="#" onClick={buttonClicked}><img src={more}/></a>
+						<div className="list">
+							<div className="best-prod  row">
+								<img className="prod-img-first" src={product}/>
+								<span className="prod-name-first">Yoghurt D</span>
+								<span className="prod-info-first">Rp 10.000</span>
+								<span className="prod-info-first jml">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt A</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt B</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt C</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt E</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+						</div>
+					</div>
+
+					<div className="list-prod container">
+						<span className="title">TOP COMPETITOR SKU</span>
+						<a className="menu-dot img2" href="#" onClick={buttonClicked}><img src={more}/></a>
+						<div className="list">
+							<div className="best-prod  row">
+								<img className="prod-img-first" src={product}/>
+								<span className="prod-name-first">Yoghurt D</span>
+								<span className="prod-info-first">Rp 10.000</span>
+								<span className="prod-info-first jml">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt A</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt B</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt C</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+
+							<div className="prod  row">
+								<img className="prod-img" src={product}/>
+								<span className="prod-name">Yoghurt E</span>
+								<span className="prod-info">Rp 10.000</span>
+								<span className="prod-info jml2">100 pcs</span>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 			</div>

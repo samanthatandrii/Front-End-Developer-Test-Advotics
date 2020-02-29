@@ -39,6 +39,7 @@ class Calendar extends React.Component {
         maxDate,
         descendingYears
     ) {
+        let val1,val2 = true;
         let value = `${this.state.start.format(
         "DD MMMM YYYY"
         )} - ${this.state.end.format("DD MMMM YYYY")}`;
@@ -62,10 +63,11 @@ class Calendar extends React.Component {
                 label="Text"
                 placeholder="Enter text"
                 style={
-                    customRangeButtons: {backgroundColor: 'rgb(255, 255, 255)'}
+                    { cursor: "pointer" }
                 }
                 value={value}
-                leftMode="True"
+                leftMode={val1}
+                noMobileMode ={val2}
             />
             </DateTimeRangeContainer>
             <br />
@@ -102,6 +104,8 @@ class Calendar extends React.Component {
             ranges,
             local,
             maxDate,
+            true,
+            true,
             true
             )}
         

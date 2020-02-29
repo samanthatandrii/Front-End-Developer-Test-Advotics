@@ -159,8 +159,47 @@ h1 {
   float:right;
 }
 
+.cal {
+  position: relative;
+  bottom:30px;
+}
+
+.cal-img{
+  position: relative;
+  top:10px;
+  left:15px;
+}
+
+.period{
+  text-align: left;
+  font: 400 16px 'Open Sans';
+  letter-spacing: 0;
+  color: #8B8B8B;
+  opacity: 1;
+  position: relative;
+  top: 12px;
+  left: 30px;
+}
+
+.down{
+  position: relative;
+  bottom:98px;
+  left:455px;
+  color:#757575;
+}
+
 .top-section {
   margin-bottom: 24px;
+  justify-content: space-between;
+  max-width: 1188px;
+}
+.date-picker{
+  width: 481px;
+  height: 48px;
+  background:#FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
 }
 
 .market-insight {

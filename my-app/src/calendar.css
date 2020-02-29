@@ -1,0 +1,24 @@
+.calendar1{
+    position: relative;
+    bottom: 44px;
+    left:130px;
+}
+
+.calendar1 input{
+    border:none;
+    width:330px;
+    text-align: left;
+    font: 400 16px 'Open Sans';
+    letter-spacing: 0;
+    color: #6A6A6A;
+    opacity: 1;
+}
+
+.calendar1 input:focus{
+    outline:none !important;
+}
+
+#rangebutton1{
+    background-color: #FFFFFF !important;
+    border-bottom: 1px #00000029 !important;
+}

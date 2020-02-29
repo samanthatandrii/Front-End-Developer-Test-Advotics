@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 import logo from './img/advotics-logo.jpg';
 import avatar from './img/Profile.svg';
@@ -13,8 +13,10 @@ import sales from './img/group.svg';
 import trolley from './img/SalesTurnover.svg';
 import more from './img/more.svg'
 import product from './img/product.png'
+import cal from './img/cal.png'
 
-import Chart from './test.js';
+import Chart from './chart.js';
+import Calendar from './calendar.js';
 
 import './App.css';
 
@@ -53,6 +55,10 @@ function App() {
 					<h1>Dashboard</h1>
 
 					<div className="date-picker">
+						<img src={cal} className="cal-img"/>
+						<span className="period">Period</span>
+						<Calendar className="cal" />
+						<FontAwesomeIcon icon={faAngleDown} className="down"/>
 						
 					</div>
 				</div>
